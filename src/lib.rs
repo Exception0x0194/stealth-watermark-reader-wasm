@@ -1,5 +1,3 @@
-mod utils;
-
 use flate2::read::GzDecoder;
 use image::GenericImageView;
 use std::convert::TryInto;
@@ -9,11 +7,6 @@ use wasm_bindgen::prelude::*;
 #[wasm_bindgen]
 extern "C" {
     fn alert(s: &str);
-}
-
-#[wasm_bindgen]
-pub fn greet() {
-    alert("Hello, stealth-watermark-reader!");
 }
 
 #[wasm_bindgen]
